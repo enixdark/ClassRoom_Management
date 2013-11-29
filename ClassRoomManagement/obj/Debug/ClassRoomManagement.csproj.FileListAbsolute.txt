@@ -1,0 +1,10 @@
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\bin\Debug\ClassRoomManagement.exe.config
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\obj\Debug\ClassRoomManagement.csprojResolveAssemblyReference.cache
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\obj\Debug\ClassRoomManagement.Main.resources
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\obj\Debug\ClassRoomManagement.Properties.Resources.resources
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\obj\Debug\ClassRoomManagement.csproj.GenerateResource.Cache
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\obj\Debug\ClassRoomManagement.exe.licenses
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\bin\Debug\ClassRoomManagement.exe
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\bin\Debug\ClassRoomManagement.pdb
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\obj\Debug\ClassRoomManagement.exe
+c:\users\enix\documents\visual studio 2012\Projects\ClassRoomManagement\ClassRoomManagement\obj\Debug\ClassRoomManagement.pdb

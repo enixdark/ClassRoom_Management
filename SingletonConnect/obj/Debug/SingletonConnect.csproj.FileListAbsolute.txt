@@ -1,4 +1,3 @@
-C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\obj\Debug\SingletonConnect.csprojResolveAssemblyReference.cache
 C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\bin\Debug\SingletonConnect.dll
 C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\bin\Debug\SingletonConnect.pdb
 C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\bin\Debug\MySql.Data.dll
@@ -6,3 +5,4 @@ C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\Singleto
 C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\bin\Debug\MySql.Web.dll
 C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\obj\Debug\SingletonConnect.dll
 C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\obj\Debug\SingletonConnect.pdb
+C:\Users\enix\Documents\Visual Studio 2012\Projects\ClassRoomManagement\SingletonConnect\obj\Debug\SingletonConnect.csprojResolveAssemblyReference.cache

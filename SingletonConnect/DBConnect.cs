@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.Linq;
 
 namespace SingletonConnect
 {
     public class DBConnect
     {
-        static DBConnect DB = null;
-        static Connect Conn;
+        public static DBConnect DB = null;
+        public static Connect Conn;
+        
         String DBName ;
         String database;
         String Url ="";
@@ -25,6 +26,7 @@ namespace SingletonConnect
             this.user = user;
             if (DBName.Equals("SQLServer"))
             {
+                
                 Conn = new SQLServer(database);
             }
             else if (DBName.Equals("MySQL"))
@@ -35,10 +37,10 @@ namespace SingletonConnect
             //{
             //    Conn = new MongoDB(database);
             //}
-            //else if (DBName.Equals("Access"))
-            //{
-            //    Conn = new Access(database);
-            //}
+            else if (DBName.Equals("Access"))
+            {
+                Conn = new Access(Url,database);
+            }
             //else if (DBName.Equals("Oracle"))
             //{
             //    Conn = new Oracle(database);

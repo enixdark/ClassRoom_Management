@@ -7,54 +7,73 @@ using System.Threading.Tasks;
 using System.Data.ProviderBase;
 using System.Data.Common;
 using System.Windows.Forms;
-
+using System.Data.Linq;
+using System.Data.Entity;
 namespace SingletonConnect
 {
-    class Connect
+    public class Connect
     {
-        private String dbName;
+       protected String url;
 
-        protected String DbName
-        {
+       public String Url
+       {
+
+            get { return url; }
+            
+       }
+
+
+       protected String dbName;
+       
+       public String DbName
+       {
             get { return dbName; }
             set { dbName = value; }
-        }
-        private DbConnection cmConnection;
+       }
+       protected DbConnection cmConnection;
 
-        protected DbConnection CMConnection
+       public DbConnection CMConnection
         {
             get { return cmConnection; }
             set { cmConnection = value; }
         }
-        private DbCommand cCommand;
+       protected DbCommand cCommand;
 
-        protected DbCommand CCommand
+       public DbCommand CCommand
         {
             get { return cCommand; }
             set { cCommand = value; }
         }
-        private DbDataAdapter cDataAdapter;
+       protected DbDataAdapter cDataAdapter;
 
-        protected DbDataAdapter CDataAdapter
+       public DbDataAdapter CDataAdapter
         {
             get { return cDataAdapter; }
             set { cDataAdapter = value; }
         }
-        private DbDataReader cDataReader;
+       protected DbDataReader cDataReader;
 
-        protected DbDataReader CDataReader
+       public DbDataReader CDataReader
         {
             get { return cDataReader; }
             set { cDataReader = value; }
         }
 
-        public Connect() { }
 
+       public Connect()
+       {
+           
+       }
         public Connect(String DbName)
         {
             this.DbName = DbName;
         }
 
+        public Connect(String url,String DbName)
+        {
+            this.url = url;
+            this.DbName = DbName;
+        }
         
         public void Open()
         {
@@ -68,7 +87,7 @@ namespace SingletonConnect
                 CMConnection.Close();
         }
 
-        public DataTable Query(String sql)
+        public DataTable QueryTable(String sql)
         {
             DataTable table = new DataTable();
             Open();

@@ -9,14 +9,21 @@ namespace SingletonConnect
 {
     class MySQL:Connect
     {
-        private String url = "";
-        public MySQL(String DBName)
-            : base(DBName)
+        
+        public MySQL(String database)
+            : base(database)
         {
-            url = "server=localhost;database="+DBName+";uid=root;pwd=''";
-            CMConnection = new MySqlConnection(url);
-            CCommand = new MySqlCommand();
-            CDataAdapter = new MySqlDataAdapter();
+            url = "server=localhost;database="+database+";uid=root;pwd=''";
+            try
+            {
+                CMConnection = new MySqlConnection(url);
+                CCommand = new MySqlCommand();
+                CDataAdapter = new MySqlDataAdapter();
+            }
+            catch (Exception e)
+            {
+                Console.Write("");
+            }
 
         }
     }

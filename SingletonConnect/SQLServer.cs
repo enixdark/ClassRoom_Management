@@ -9,11 +9,11 @@ namespace SingletonConnect
 {
     class SQLServer:Connect
     {
-        private String url = "";
-        public SQLServer(String DBName)
-            : base(DBName)
+        
+        public SQLServer(String database)
+            : base(database)
         {
-            url = "server=localhost;database="+DBName+";integrated security=true";
+            url = "server=localhost;database="+database+";integrated security=true";
             CMConnection = new SqlConnection(url);
             CCommand = new SqlCommand();
             CDataAdapter = new SqlDataAdapter();

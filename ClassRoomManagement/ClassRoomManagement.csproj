@@ -7,10 +7,27 @@
     <ProjectGuid>{6EAEA709-188A-4EA0-B365-4FFE4ADDD49B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassRoomManagement</RootNamespace>
+    <RootNamespace>CustomItem</RootNamespace>
     <AssemblyName>ClassRoomManagement</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,16 +49,81 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.BonusSkins.v12.2, Version=12.2.5.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.BonusSkins.v12.2.dll</HintPath>
+    <Reference Include="CustomItem">
+      <HintPath>..\CustomItem\bin\Debug\CustomItem.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v12.2, Version=12.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.UI, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data.entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySQL.Data.Entities.6.8.3.0\lib\net45\mysql.data.entity.EF6.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.90.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.90.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,24 +132,257 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="DevExpress.Docs.v13.1">
+      <HintPath>..\..\..\..\..\..\..\Program Files\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.Docs.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v13.1">
+      <HintPath>..\..\..\..\..\..\..\Program Files\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.Tutorials.v13.1.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="Module\Access\UCNormal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Access\UCNormal.Designer.cs">
+      <DependentUpon>UCNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Access\UCSuper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Access\UCSuper.Designer.cs">
+      <DependentUpon>UCSuper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\DragDropHelper.cs" />
+    <Compile Include="Module\Form\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.designer.cs">
+    <Compile Include="Module\Form\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\MClass\Global.cs" />
+    <Compile Include="Module\Form\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Form\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\Reports.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module\Report\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\ReportsEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module\Report\ReportsEx.Designer.cs">
+      <DependentUpon>ReportsEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\UCReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Report\UCReport.Designer.cs">
+      <DependentUpon>UCReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\UCReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Report\UCReports.Designer.cs">
+      <DependentUpon>UCReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\AppointmentFormOutlook2007Style.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\AppointmentFormOutlook2007Style.Designer.cs">
+      <DependentUpon>AppointmentFormOutlook2007Style.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\UCState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\UCState.Designer.cs">
+      <DependentUpon>UCState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\UCStateGRUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\UCStateGRUD.Designer.cs">
+      <DependentUpon>UCStateGRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\UCStateStandart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\StateRoom\UCStateStandart.Designer.cs">
+      <DependentUpon>UCStateStandart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\UCBaseRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\UCBaseRoom.Designer.cs">
+      <DependentUpon>UCBaseRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\UCAddRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\UCAddRoom.Designer.cs">
+      <DependentUpon>UCAddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\UCFormAddRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\UCFormAddRoom.Designer.cs">
+      <DependentUpon>UCFormAddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\UCRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\UCRoom.Designer.cs">
+      <DependentUpon>UCRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Room\UCRoomSwitch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Room\UCRoomSwitch.Designer.cs">
+      <DependentUpon>UCRoomSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCExcel.Designer.cs">
+      <DependentUpon>UCExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\UCAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\UCAdmin.Designer.cs">
+      <DependentUpon>UCAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\UCBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\UCBase.Designer.cs">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCTimetable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCTimetable.Designer.cs">
+      <DependentUpon>UCTimetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCTimetables.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCTimetables.Designer.cs">
+      <DependentUpon>UCTimetables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCTableExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\TimeTable\UCTableExcel.Designer.cs">
+      <DependentUpon>UCTableExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Access\UCSupers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Access\UCSupers.Designer.cs">
+      <DependentUpon>UCSupers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\UCGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\UCGroup.Designer.cs">
+      <DependentUpon>UCGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestConnect.cs">
-      <SubType>Form</SubType>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="TestConnect.Designer.cs">
-      <DependentUpon>TestConnect.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Module\Access\UCNormal.resx">
+      <DependentUpon>UCNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Access\UCSuper.resx">
+      <DependentUpon>UCSuper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Access\UCSupers.resx">
+      <DependentUpon>UCSupers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Form\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Form\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\ReportsEx.resx">
+      <DependentUpon>ReportsEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\UCReport.resx">
+      <DependentUpon>UCReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\UCReports.resx">
+      <DependentUpon>UCReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\UserControl1.resx" />
+    <EmbeddedResource Include="Module\Room\StateRoom\AppointmentFormOutlook2007Style.resx">
+      <DependentUpon>AppointmentFormOutlook2007Style.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\StateRoom\UCState.resx">
+      <DependentUpon>UCState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\StateRoom\UCStateGRUD.resx">
+      <DependentUpon>UCStateGRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\StateRoom\UCStateStandart.resx">
+      <DependentUpon>UCStateStandart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\UCAddRoom.resx">
+      <DependentUpon>UCAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\UCBaseRoom.resx">
+      <DependentUpon>UCBaseRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TimeTable\UCExcel.resx">
+      <DependentUpon>UCExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\UCAdmin.resx">
+      <DependentUpon>UCAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\UCBase.resx">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\UCFormAddRoom.resx">
+      <DependentUpon>UCFormAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\UCRoom.resx">
+      <DependentUpon>UCRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Room\UCRoomSwitch.resx">
+      <DependentUpon>UCRoomSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TimeTable\UCTimetable.resx">
+      <DependentUpon>UCTimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TimeTable\UCTimetables.resx">
+      <DependentUpon>UCTimetables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TimeTable\UCTableExcel.resx">
+      <DependentUpon>UCTableExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\UCGroup.resx">
+      <DependentUpon>UCGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -78,10 +393,15 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TestConnect.resx">
-      <DependentUpon>TestConnect.cs</DependentUpon>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="classroommanagement.sqlite" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,13 +416,47 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SingletonConnect\SingletonConnect.csproj">
-      <Project>{5d065ccd-2a52-4867-a873-83d10d9fcf0a}</Project>
-      <Name>SingletonConnect</Name>
+    <ProjectReference Include="..\ClassRoomBUS\ClassRoomBUS.csproj">
+      <Project>{28C80830-4BF0-4FAE-A454-289DDAF2C42F}</Project>
+      <Name>ClassRoomBUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassRoomDAL\ClassRoomDAL.csproj">
+      <Project>{35B31665-2333-4255-9CAE-492BBD6C7CA0}</Project>
+      <Name>ClassRoomDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{A6EF3716-48D0-4C72-A215-72403D97AEF6}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Url.xml" />
+    <Content Include="Data.xml" />
+    <Content Include="Url.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,1308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="spreadsheetControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="spreadsheetControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 117</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="repositoryItemFontEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+    <value>Combo</value>
+  </data>
+  <data name="repositoryItemSpreadsheetFontSizeEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemSpreadsheetFontSizeEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+    <value>Combo</value>
+  </data>
+  <metadata name="galleryDropDown1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>213, 17</value>
+  </metadata>
+  <data name="spreadsheetCommandBarButtonItem90.Caption" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="spreadsheetCommandBarButtonItem90.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAadEVYdFRpdGxlAFN1Z2dlc3Rpb247SWRlYTtMYW1wG1xZEQAAAnRJREFUOE99km1IU2EUx6fz
+        Zb2TxSSiESmD0MbC1gvRh5RVWji1KIaUQilFG2Vr5lzpsih8W5iZLCND/FBQERkW2YesmDNF05C8842p
+        K8xcmVtrpvx7zgwzuHjgzzk85/f8uNx7BQD8oXJUbKcW0FWsiO0xb67rNSuc9tIY58dC+VNrXpSS7YS0
+        J2j23lwBqwDu2hbjYHU8PNxjTHtGMMXiZnO/JRatpvXFjAkmjk8Q0FmoiBu8Gz/9k6vGlNuJqYlhliH/
+        TGf9t5V4qY9IZayQTyC0mxXW701auDuM8H1uYHkxG/f7XLjenEDL+ch3jBXxCYLspZvGPXYD3O3J8HRn
+        wTtQ7I+HO4OJtiR4+3LRnr9ukrGL+ATBXNHGce+gjoEpmHSew+/RIpZC+D7lwNubjF/DerRdWEuCxbyC
+        D1dltvEWNbzdKvj601lP9GdmVuGb7SDeZktaGcv7BMJ6nTShrzIGblsCfrza+l8mmvagp1KO+xnhWsaG
+        8Ano+4Y25kSWOapkcD2UYeye1B/Xgw1w3IrGM+2qWsYsIZZPQEWSpc3GiC7nDQm+1kgxdDkMw+Vr0Khb
+        3c12K1joZ/p3b66gs0BKLfT5Kcl1+0UxRirEGMheAM60Eo8yxTfZbmGzPpwYfoGuoIZaUGqmKa3EUgdr
+        K4fyO/XQGCxQJh4/ynYhKnUeMfMKAncoD0VnX6phArtfkHayFFHyWDnt9h4wEDOvgN7DsmNZZV8aXneg
+        xPIEKYfzR9lZGO12JZ0lhl9wOq9aoDFU0Rgan6JJV2dcGdt/xDS2bWcqPb5od5JeELcvi/b8gjkVyCJi
+        Wf43NNPZbM3cg+APrGEJnRaTN7YAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="spreadsheetCommandBarButtonItem90.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAadEVYdFRpdGxlAFN1Z2dlc3Rpb247SWRlYTtMYW1wG1xZEQAAB31JREFUWEe1Vw1QlWUWRtRo
+        KbVVBAXR6w9/4rYocwUMETMbVy2tXBdayz+iKbcUCMQCwTBSEKFIZQLJzKZRV/dH0IRMMBcIFAgIARVW
+        lLj8c++Fey/3ok/nvBc1vw/H0ZmemTPv9517znnOe95zXj4sANwjt9Gc+TzJwtu6ISRDCz/2mVS/1z+m
+        cZ//uetp/k030vzRuM+vqWHP3B9qU+bEZm32mEJ2w0ks2ef/qT4W9Z9406MZUi4RW6YYQPP+53hhYsuE
+        Va7W1/b6JzVn+unVZ4NhVOXhpqYGuNUvVn7vOvMGru3zNlQneaWs8Rs3kvyGsf/VZCXHEZByCT6ZYgBN
+        6Qt4sTwdpbRvTPO70PmfuTA1n8Stvi7cMrB04paehFd+J71JdRJtx3xwJVl5MSPIaSL5iyQ4EEPKJfhk
+        irsYsnOVszWTq3O8oa/cif6uugeKvmonuk97oXaXZ+kryjFPUZw7SUi5BJ9MYYY48/pU38SOE3OhznZB
+        37UTMP6Sf0dMv3n+7TvbqbNc0HLMC2VxTydTnMdJuCdkXIJPpjDD8myMp6IpY65Rd2Eeuo7aoe/yfvQ1
+        fPNAMZAd2/eWzMOVlJmm9LWK6RSPG3OIlEvwyRQDu69N9onvyF6A3gJPqsB49Ba/CkPdrgeKjuzU2fbk
+        NxOqfz2DomjXRIonqiDlEnwyhTmB4VdTfAq0JUsokBu0Zx3Rk6eArjwQhpqwe+XS3ZV/1+Yr0MP25Kcu
+        WoSyWJcfKd4TJEOlXIJPpjAn8FhDipdKX7cCvRedafdEXjyZyjoFurJZ0P+8nAgDYKhdS+QB4l1Pel3x
+        VLMdie6CE/S1L6Ei1qWV4o14mAS4YawakpV9xusUvGKaEF2lM3RV7jD87Enkc6Cv8acEFlAC/tBfeob0
+        lBj9Lux+Mvuwf0WMk5HijSIZJuUSfDKFOYHHLyd6thgaVhCRGwzVLkT0J2pEXxibwtCv+ZbmvoHM6S4y
+        teFmTwFNwAfid7YzVDvT6gZ9/Ssoj57KFXioBPgIrGp3zDyvLX8BfVdmoa/WjYJ700WzDTfV/0Z/Rwb6
+        2/egvyXevHYcwE3t9zC17RZ2BrYnP03pYhRFTiqieHwzPlwPlMbOiG3Nmkej5Uc7cqckfOkm3EYSDVNr
+        EknKgNCzagfdA1tgakkiOzoOtie/G8e8kfPuhHiKx034UFMw7Iv1k914jvvql9B5utIZz6bd/Q3Gxggi
+        +5gSSaQ1gY5kO511FBFuoF2vEHZsz36V8dNMWxePnknxrDiulEvwyRRmiD4ojnJJbTlBDVehpAmYTs01
+        n852NQxX3yOCCLp0NlKPvEFT8HfoKpZCV+ot7Nj+l+NK5L5rn0Zxbv9hknEJPpnCDFGF56aPGFO5zbWs
+        O98XPedd0fM/GrWLLxLBWpr5V6ErWUzz7gvtD7OhPfc0tHlOwq4zbw4KIhwq/jzhMXuKI3bPQaVcgk+m
+        uAsxjlv+MtapartTsybPiy4kqkTBEprxNegtfBGaM0qoT05Bd5aCZCI0pxVQn52NkihHVdCcEe7kb00y
+        lIMxpFyCT6YYQHWsEy+chPXX6xxevpxMF1LBUvSce4nK/LZY1dke6Dw6Dh1HxolV+/0MXEpQIHXl6ADy
+        u/NNQCIg5RJ8MsUAqrZO40VMxCL3J+x/2qrQa/OWU5kDoa/+hKoRgK7jHmg/aIPGPTa0joX6lDtKNo83
+        +ky2UpCfuP+Lwmw5joCUS/DJFAOojJ5i0f1fZ37kXYwqinAsbTv+PCVAX0TXs6n8q9F5eBZaPx+N2o9s
+        0PaFLVSHpiJ/o20F2Y8hGc7+RaE2HENAyiX4ZIoBVLw/yaL76CR+5DN8Mved8emN6d70x2YTjDdyoMkN
+        QsehWWhJHYWaD8egLcMW9Z86ICvYJpPsxYcI+z9yAuVbJlp0fsVNbO6DI+tsg2sSplMFQqkC31G516H9
+        gAdUu0eiLm4s2tLtUPWhHTIDn9pA9k+SDGX/wpBHTKAs0tGiY78dP3IfWIU+O9Kj/IOJuP7lMqjLDlIl
+        NtOHx0La+TjUJTjiaqIdLkTYIMjHejbZ/4HEkv0LH7UCpZsdLC6Gj+dH0YgkdvFx8Tj8WRyO7tqIjPBl
+        +DzsBaRtWoKEf7yMz2I34Z0NIRxgAgk34BDefWEIt4MZUi7BJ1MMDv6ksouO+xRf/zMXVZcaoNPr8V1+
+        CSJjU/HX1eH4aPcBrHkz8nYCfPnIIOUSfDLF4BAJbIlJxv5DJ3HiVAFOnylG0t4jeP2t7VgaEIqYHRlY
+        tT6cAziQ/C4JjA2PStAePPztoBWI25WJwDUhOrLjc+Mjk0HKJfhkisHBd8EfN2zamrt7zzeDViAsKhnL
+        VwafITvuOvEVTHIPpFyCT6YYHGIUFy1dOT80cofmVM55qFrbRAXCo1MQuDYcr61/T+PptWAh2YkRZCcp
+        pFyCT6a4P7gKI5Xe85Wr1oXkvB4U0f4anXnA6pD2ZSuDc91mKPm/UL6ABt09Q8ol+GSK+4ODchL8dcOz
+        xWfNHc+3FZedd35fcoaUS/DJFA8GHwcTcaNxt/PK76y/LzlDygXA4leQjj6JtpAvYgAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="spreadsheetCommandBarButtonItem90.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxMy4xLCBWZXJzaW9uPTEzLjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjEzLjEsIFZlcnNpb249MTMuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAAJUmVkbyAoRjUpBQgAAAAcRGV2RXhwcmVzcy5VdGls
+        cy5Ub29sVGlwSXRlbQoAAAANQWxsb3dIdG1sVGV4dARJY29uBUltYWdlCkltYWdlQWxpZ24KSW1hZ2VJ
+        bmRleBNJbWFnZVRvVGV4dERpc3RhbmNlCkxlZnRJbmRlbnQITWF4V2lkdGgST3duZXJBbGxvd0h0bWxU
+        ZXh0BFRleHQEBAQEAAAAAAABH0RldkV4cHJlc3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4DAAAAE1N5c3Rl
+        bS5EcmF3aW5nLkljb24JAAAAFFN5c3RlbS5EcmF3aW5nLkltYWdlCQAAACZEZXZFeHByZXNzLlV0aWxz
+        LlRvb2xUaXBJbWFnZUFsaWdubWVudAIAAAAICAgIAQIAAAAB8/////z///8CAAAACgoB8v////X///8A
+        AAAA/////w4AAAAGAAAAPAEAAAAGDwAAAARFeGVjCw==
+</value>
+  </data>
+  <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 117</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Name" xml:space="preserve">
+    <value>ribbonControl1</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="spreadsheetControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 315</value>
+  </data>
+  <data name="spreadsheetControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="spreadsheetControl1.Text" xml:space="preserve">
+    <value>spreadsheetControl2</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetControl1.Name" xml:space="preserve">
+    <value>spreadsheetControl1</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.SpreadsheetControl, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="spreadsheetBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;stylesRibbonPageGroup1.Name" xml:space="preserve">
+    <value>stylesRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;stylesRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.StylesRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;galleryChangeStyleItem1.Name" xml:space="preserve">
+    <value>galleryChangeStyleItem1</value>
+  </data>
+  <data name="&gt;&gt;galleryChangeStyleItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.GalleryChangeStyleItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem1.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem2.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem2</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem3.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem3</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem8.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem8</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem9.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem9</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem10.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem10</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem11.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem11</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem12.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem12</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem13.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem13</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup1.Name" xml:space="preserve">
+    <value>barButtonGroup1</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;changeFontNameItem1.Name" xml:space="preserve">
+    <value>changeFontNameItem1</value>
+  </data>
+  <data name="&gt;&gt;changeFontNameItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ChangeFontNameItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit1.Name" xml:space="preserve">
+    <value>repositoryItemFontEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;changeFontSizeItem1.Name" xml:space="preserve">
+    <value>changeFontSizeItem1</value>
+  </data>
+  <data name="&gt;&gt;changeFontSizeItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ChangeFontSizeItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpreadsheetFontSizeEdit1.Name" xml:space="preserve">
+    <value>repositoryItemSpreadsheetFontSizeEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSpreadsheetFontSizeEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Design.RepositoryItemSpreadsheetFontSizeEdit, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem14.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem14</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem15.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem15</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup2.Name" xml:space="preserve">
+    <value>barButtonGroup2</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem1.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem1</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem2.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem2</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem3.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem3</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem4.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem4</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup3.Name" xml:space="preserve">
+    <value>barButtonGroup3</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem1.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem1</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem16.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem16</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem17.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem17</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem18.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem18</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem19.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem19</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem20.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem20</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem20.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem21.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem21</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem21.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem22.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem22</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem22.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem23.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem23</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem23.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem24.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem24</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem24.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem25.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem25</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem25.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem26.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem26</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem26.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem27.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem27</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem27.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem28.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem28</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem28.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;changeBorderLineColorItem1.Name" xml:space="preserve">
+    <value>changeBorderLineColorItem1</value>
+  </data>
+  <data name="&gt;&gt;changeBorderLineColorItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ChangeBorderLineColorItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;changeBorderLineStyleItem1.Name" xml:space="preserve">
+    <value>changeBorderLineStyleItem1</value>
+  </data>
+  <data name="&gt;&gt;changeBorderLineStyleItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ChangeBorderLineStyleItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;galleryDropDown1.Name" xml:space="preserve">
+    <value>galleryDropDown1</value>
+  </data>
+  <data name="&gt;&gt;galleryDropDown1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.GalleryDropDown, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup4.Name" xml:space="preserve">
+    <value>barButtonGroup4</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;changeCellFillColorItem1.Name" xml:space="preserve">
+    <value>changeCellFillColorItem1</value>
+  </data>
+  <data name="&gt;&gt;changeCellFillColorItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ChangeCellFillColorItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;changeFontColorItem1.Name" xml:space="preserve">
+    <value>changeFontColorItem1</value>
+  </data>
+  <data name="&gt;&gt;changeFontColorItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ChangeFontColorItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup5.Name" xml:space="preserve">
+    <value>barButtonGroup5</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup5.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem5.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem5</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem6.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem6</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem7.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem7</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup6.Name" xml:space="preserve">
+    <value>barButtonGroup6</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup6.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem8.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem8</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem9.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem9</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem10.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem10</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup7.Name" xml:space="preserve">
+    <value>barButtonGroup7</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup7.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem29.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem29</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem29.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem30.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem30</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem30.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem11.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem11</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem2.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem2</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem12.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem12</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem31.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem31</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem31.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem32.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem32</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem32.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem33.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem33</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem33.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup8.Name" xml:space="preserve">
+    <value>barButtonGroup8</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup8.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem3.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem3</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem34.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem34</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem34.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem35.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem35</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem35.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem36.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem36</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem36.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem37.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem37</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem37.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem38.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem38</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem38.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem39.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem39</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem39.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem40.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem40</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem40.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup9.Name" xml:space="preserve">
+    <value>barButtonGroup9</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup9.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem41.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem41</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem41.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem42.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem42</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem42.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem4.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem4</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem43.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem43</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem43.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem44.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem44</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem44.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem45.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem45</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem45.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem5.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem5</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem46.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem46</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem46.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem47.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem47</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem47.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem48.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem48</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem48.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem6.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem6</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem49.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem49</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem49.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem50.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem50</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem50.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem7.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem7</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem51.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem51</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem51.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem52.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem52</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem52.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem53.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem53</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem53.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem54.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem54</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem54.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem55.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem55</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem55.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem56.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem56</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem56.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem57.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem57</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem57.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem8.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem8</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem58.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem58</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem58.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem59.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem59</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem59.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem60.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem60</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem60.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem61.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem61</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem61.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem62.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem62</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem62.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem9.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem9</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem63.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem63</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem63.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem64.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem64</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem64.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem65.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem65</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem65.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem66.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem66</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem66.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem10.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem10</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem67.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem67</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem67.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem68.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem68</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem68.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem69.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem69</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem69.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem70.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem70</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem70.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem71.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem71</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem71.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem72.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem72</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem72.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem73.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem73</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem73.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem74.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem74</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem74.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem11.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem11</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem13.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem13</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem14.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem14</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem15.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem15</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem12.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem12</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem16.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem16</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem17.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem17</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pageSetupPaperKindItem1.Name" xml:space="preserve">
+    <value>pageSetupPaperKindItem1</value>
+  </data>
+  <data name="&gt;&gt;pageSetupPaperKindItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.PageSetupPaperKindItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem13.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem13</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsFinancialItem1.Name" xml:space="preserve">
+    <value>functionsFinancialItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsFinancialItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsFinancialItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsLogicalItem1.Name" xml:space="preserve">
+    <value>functionsLogicalItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsLogicalItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsLogicalItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsTextItem1.Name" xml:space="preserve">
+    <value>functionsTextItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsTextItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsTextItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsDateAndTimeItem1.Name" xml:space="preserve">
+    <value>functionsDateAndTimeItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsDateAndTimeItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsDateAndTimeItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsLookupAndReferenceItem1.Name" xml:space="preserve">
+    <value>functionsLookupAndReferenceItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsLookupAndReferenceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsLookupAndReferenceItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsMathAndTrigonometryItem1.Name" xml:space="preserve">
+    <value>functionsMathAndTrigonometryItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsMathAndTrigonometryItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsMathAndTrigonometryItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem14.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem14</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsStatisticalItem1.Name" xml:space="preserve">
+    <value>functionsStatisticalItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsStatisticalItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsStatisticalItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsEngineeringItem1.Name" xml:space="preserve">
+    <value>functionsEngineeringItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsEngineeringItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsEngineeringItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsCubeItem1.Name" xml:space="preserve">
+    <value>functionsCubeItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsCubeItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsCubeItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsInformationItem1.Name" xml:space="preserve">
+    <value>functionsInformationItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsInformationItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsInformationItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionsCompatibilityItem1.Name" xml:space="preserve">
+    <value>functionsCompatibilityItem1</value>
+  </data>
+  <data name="&gt;&gt;functionsCompatibilityItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionsCompatibilityItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem18.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem18</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem19.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarCheckItem19</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarCheckItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarCheckItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem80.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem80</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem80.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem81.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem81</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem81.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem82.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem82</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem82.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem15.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarSubItem15</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarSubItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarSubItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem83.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem83</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem83.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem84.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem84</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem84.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem85.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem85</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem85.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem86.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem86</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem86.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fileRibbonPage1.Name" xml:space="preserve">
+    <value>fileRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;fileRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FileRibbonPage, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;commonRibbonPageGroup1.Name" xml:space="preserve">
+    <value>commonRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;commonRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.CommonRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;homeRibbonPage1.Name" xml:space="preserve">
+    <value>homeRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;homeRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.HomeRibbonPage, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;clipboardRibbonPageGroup1.Name" xml:space="preserve">
+    <value>clipboardRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;clipboardRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ClipboardRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;fontRibbonPageGroup1.Name" xml:space="preserve">
+    <value>fontRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;fontRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FontRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;alignmentRibbonPageGroup1.Name" xml:space="preserve">
+    <value>alignmentRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;alignmentRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.AlignmentRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;numberRibbonPageGroup1.Name" xml:space="preserve">
+    <value>numberRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;numberRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.NumberRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cellsRibbonPageGroup1.Name" xml:space="preserve">
+    <value>cellsRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;cellsRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.CellsRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;editingRibbonPageGroup1.Name" xml:space="preserve">
+    <value>editingRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;editingRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.EditingRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;insertRibbonPage1.Name" xml:space="preserve">
+    <value>insertRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;insertRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.InsertRibbonPage, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;illustrationsRibbonPageGroup1.Name" xml:space="preserve">
+    <value>illustrationsRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;illustrationsRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.IllustrationsRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;linksRibbonPageGroup1.Name" xml:space="preserve">
+    <value>linksRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;linksRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.LinksRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pageLayoutRibbonPage1.Name" xml:space="preserve">
+    <value>pageLayoutRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;pageLayoutRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.PageLayoutRibbonPage, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pageSetupRibbonPageGroup1.Name" xml:space="preserve">
+    <value>pageSetupRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;pageSetupRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.PageSetupRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;formulasRibbonPage1.Name" xml:space="preserve">
+    <value>formulasRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;formulasRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FormulasRibbonPage, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;functionLibraryRibbonPageGroup1.Name" xml:space="preserve">
+    <value>functionLibraryRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;functionLibraryRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.FunctionLibraryRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;viewRibbonPage1.Name" xml:space="preserve">
+    <value>viewRibbonPage1</value>
+  </data>
+  <data name="&gt;&gt;viewRibbonPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ViewRibbonPage, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;showRibbonPageGroup1.Name" xml:space="preserve">
+    <value>showRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;showRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ShowRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;zoomRibbonPageGroup1.Name" xml:space="preserve">
+    <value>zoomRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;zoomRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.ZoomRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;windowRibbonPageGroup1.Name" xml:space="preserve">
+    <value>windowRibbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;windowRibbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.WindowRibbonPageGroup, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetBarController1.Name" xml:space="preserve">
+    <value>spreadsheetBarController1</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetBarController1.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetBarController, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem75.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem75</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem75.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem76.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem76</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem76.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem77.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem77</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem77.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem78.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem78</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem78.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem79.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem79</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem79.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.UI.SpreadsheetCommandBarButtonItem, DevExpress.XtraSpreadsheet.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem90.Name" xml:space="preserve">
+    <value>spreadsheetCommandBarButtonItem90</value>
+  </data>
+  <data name="&gt;&gt;spreadsheetCommandBarButtonItem90.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CustomDrawModule</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>CustomItem.SpreadSheetTutorialControlBase, CustomItem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

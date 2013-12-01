@@ -12,7 +12,6 @@ namespace SingletonConnect
     {
         public static DBConnect DB = null;
         public static Connect Conn;
-        
         String DBName ;
         String database;
         String Url ="";

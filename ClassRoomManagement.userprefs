@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomItem\BackControl\Navigation.cs">
+    <Files>
+      <File FileName="SingletonConnect\Connect.cs" Line="1" Column="1" />
+      <File FileName="ClassRoomDAL\AccountDAL.cs" Line="1" Column="1" />
+      <File FileName="ClassRoomDAL\App.config" Line="1" Column="1" />
+      <File FileName="ClassRoomBUS\AccountBUS.cs" Line="1" Column="1" />
+      <File FileName="ClassRoomBUS\GiangvienBUS.cs" Line="1" Column="1" />
+      <File FileName="ClassRoomBUS\MonhocBUS.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\ReleaseMemory.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\ImageTextBox.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\ImageNull.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\CTItem.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\RotateItem.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\Excel\CustomDraw.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\BackControl\Layout.cs" Line="1" Column="1" />
+      <File FileName="CustomItem\BackControl\Navigation.cs" Line="17" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" line="3390" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

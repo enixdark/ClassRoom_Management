@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="895fad15416f4cb89f5cfe625602787c" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="classroommanagementModel.Account" Width="1.5" PointX="1" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.cahoc" Width="1.5" PointX="6.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.Giangvien" Width="1.5" PointX="3.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.hocphan" Width="1.5" PointX="7.375" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.Lop" Width="1.5" PointX="3.125" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.monhoc" Width="1.5" PointX="15.375" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.Nganh" Width="1.5" PointX="1.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.Nhom" Width="1.5" PointX="1.375" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.phonghoc" Width="1.5" PointX="12.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.quyen" Width="1.5" PointX="14.5" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.quyentruycap" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.SinhVien" Width="1.5" PointX="5.375" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.lapphong" Width="1.5" PointX="19.875" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.thoikhoabieu" Width="1.5" PointX="12.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="classroommanagementModel.trangthaiphong" Width="1.5" PointX="10" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="classroommanagementModel.pk_fraccmanhom" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frgvmagv" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frgvmasv" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frtkbmaca" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frttpmaca" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frgvnganh" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frtkbmagv" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frhpmamh" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frtkbmahp" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frlmang" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frlpmalop" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frsvlop" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frtkbmalop" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frsvnganh" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frtkbmanganh" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frqtrcmanhom" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frlpmamaphong" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frttpmaphong" ManuallyRouted="false" />
+        <AssociationConnector Association="classroommanagementModel.pk_frqtrcmaquyen" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

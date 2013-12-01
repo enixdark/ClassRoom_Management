@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="classroommanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="maid" />
+          </Key>
+          <Property Name="maid" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="pass" Type="varchar" MaxLength="30" />
+          <Property Name="manhom" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="cahoc">
+          <Key>
+            <PropertyRef Name="maca" />
+          </Key>
+          <Property Name="maca" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="thoiluong" Type="nvarchar" MaxLength="20" />
+          <Property Name="thoigianbatdau" Type="time" Precision="7" />
+          <Property Name="thoigianketthuc" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="Giangvien">
+          <Key>
+            <PropertyRef Name="magv" />
+          </Key>
+          <Property Name="magv" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="tengv" Type="nvarchar" MaxLength="40" />
+          <Property Name="manganh" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="hocphan">
+          <Key>
+            <PropertyRef Name="mahp" />
+          </Key>
+          <Property Name="mahp" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="mamh" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'classroommanagement.dbo.lapphong' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="lapphong">
+          <Key>
+            <PropertyRef Name="mahp" />
+            <PropertyRef Name="maphong" />
+            <PropertyRef Name="malop" />
+          </Key>
+          <Property Name="mahp" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="maphong" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="malop" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Lop">
+          <Key>
+            <PropertyRef Name="malop" />
+          </Key>
+          <Property Name="malop" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="tenlop" Type="nvarchar" MaxLength="20" />
+          <Property Name="manganh" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="monhoc">
+          <Key>
+            <PropertyRef Name="mamh" />
+          </Key>
+          <Property Name="mamh" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="tenmh" Type="nvarchar" MaxLength="100" />
+          <Property Name="sotinchi" Type="int" />
+        </EntityType>
+        <EntityType Name="Nganh">
+          <Key>
+            <PropertyRef Name="manganh" />
+          </Key>
+          <Property Name="manganh" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="tennganh" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Nhom">
+          <Key>
+            <PropertyRef Name="manhom" />
+          </Key>
+          <Property Name="manhom" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="tennhom" Type="nvarchar" MaxLength="50" />
+          <Property Name="phanloai" Type="nvarchar" MaxLength="20" />
+          <Property Name="thongtin" Type="nvarchar(max)" />
+          <Property Name="image" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="phonghoc">
+          <Key>
+            <PropertyRef Name="maphong" />
+          </Key>
+          <Property Name="maphong" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="tenphong" Type="nvarchar" MaxLength="20" />
+          <Property Name="dien_tich" Type="float" />
+          <Property Name="siso" Type="int" />
+          <Property Name="images" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="quyen">
+          <Key>
+            <PropertyRef Name="maquyen" />
+          </Key>
+          <Property Name="maquyen" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="quyenloi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="quyentruycap">
+          <Key>
+            <PropertyRef Name="manhom" />
+            <PropertyRef Name="maquyen" />
+          </Key>
+          <Property Name="manhom" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="maquyen" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="trangthai" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="masv" />
+          </Key>
+          <Property Name="masv" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="hoten" Type="nvarchar" MaxLength="40" />
+          <Property Name="malop" Type="varchar" MaxLength="20" />
+          <Property Name="manganh" Type="varchar" MaxLength="20" />
+          <Property Name="gioitinh" Type="bit" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'classroommanagement.dbo.thoikhoabieu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="thoikhoabieu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="mahp" Type="varchar" MaxLength="20" />
+          <Property Name="malop" Type="varchar" MaxLength="20" />
+          <Property Name="magv" Type="varchar" MaxLength="20" />
+          <Property Name="manganh" Type="varchar" MaxLength="20" />
+          <Property Name="maca" Type="varchar" MaxLength="5" />
+          <Property Name="siso" Type="int" />
+          <Property Name="tuanhocbatdau" Type="int" />
+          <Property Name="tuanhocketthuc" Type="int" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'classroommanagement.dbo.trangthaiphong' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="trangthaiphong">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="maphong" Type="varchar" MaxLength="10" />
+          <Property Name="maca" Type="varchar" MaxLength="5" />
+          <Property Name="hientrang" Type="nvarchar" MaxLength="50" />
+          <Property Name="thoigianbatdau" Type="datetime" />
+          <Property Name="thoigianketthuc" Type="datetime" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tuanhoc">
+          <Key>
+            <PropertyRef Name="tuan" />
+          </Key>
+          <Property Name="tuan" Type="int" Nullable="false" />
+          <Property Name="thoigianbatdau" Type="smalldatetime" />
+          <Property Name="thoigianketthuc" Type="smalldatetime" />
+        </EntityType>
+        <Association Name="pk_fraccmanhom">
+          <End Role="Nhom" Type="Self.Nhom" Multiplicity="0..1" />
+          <End Role="Account" Type="Self.Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhom">
+              <PropertyRef Name="manhom" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="manhom" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frgvmagv">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="Giangvien" Type="Self.Giangvien" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="maid" />
+            </Principal>
+            <Dependent Role="Giangvien">
+              <PropertyRef Name="magv" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frgvmasv">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="maid" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="masv" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frgvnganh">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="Giangvien" Type="Self.Giangvien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="Giangvien">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frhpmamh">
+          <End Role="monhoc" Type="Self.monhoc" Multiplicity="0..1" />
+          <End Role="hocphan" Type="Self.hocphan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="monhoc">
+              <PropertyRef Name="mamh" />
+            </Principal>
+            <Dependent Role="hocphan">
+              <PropertyRef Name="mamh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frlmang">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="Lop" Type="Self.Lop" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="Lop">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frlpmalop">
+          <End Role="Lop" Type="Self.Lop" Multiplicity="1" />
+          <End Role="lapphong" Type="Self.lapphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="malop" />
+            </Principal>
+            <Dependent Role="lapphong">
+              <PropertyRef Name="malop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frlpmamaphong">
+          <End Role="phonghoc" Type="Self.phonghoc" Multiplicity="1" />
+          <End Role="lapphong" Type="Self.lapphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="phonghoc">
+              <PropertyRef Name="maphong" />
+            </Principal>
+            <Dependent Role="lapphong">
+              <PropertyRef Name="maphong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frqtrcmanhom">
+          <End Role="Nhom" Type="Self.Nhom" Multiplicity="1" />
+          <End Role="quyentruycap" Type="Self.quyentruycap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhom">
+              <PropertyRef Name="manhom" />
+            </Principal>
+            <Dependent Role="quyentruycap">
+              <PropertyRef Name="maquyen" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frqtrcmaquyen">
+          <End Role="quyen" Type="Self.quyen" Multiplicity="1" />
+          <End Role="quyentruycap" Type="Self.quyentruycap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="quyen">
+              <PropertyRef Name="maquyen" />
+            </Principal>
+            <Dependent Role="quyentruycap">
+              <PropertyRef Name="maquyen" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frsvlop">
+          <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="malop" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="malop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frsvnganh">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmaca">
+          <End Role="cahoc" Type="Self.cahoc" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cahoc">
+              <PropertyRef Name="maca" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="maca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmagv">
+          <End Role="Giangvien" Type="Self.Giangvien" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Giangvien">
+              <PropertyRef Name="magv" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="magv" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmahp">
+          <End Role="hocphan" Type="Self.hocphan" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="hocphan">
+              <PropertyRef Name="mahp" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="mahp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmalop">
+          <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="malop" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="malop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmanganh">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frttpmaca">
+          <End Role="cahoc" Type="Self.cahoc" Multiplicity="0..1" />
+          <End Role="trangthaiphong" Type="Self.trangthaiphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cahoc">
+              <PropertyRef Name="maca" />
+            </Principal>
+            <Dependent Role="trangthaiphong">
+              <PropertyRef Name="maca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frttpmaphong">
+          <End Role="phonghoc" Type="Self.phonghoc" Multiplicity="0..1" />
+          <End Role="trangthaiphong" Type="Self.trangthaiphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="phonghoc">
+              <PropertyRef Name="maphong" />
+            </Principal>
+            <Dependent Role="trangthaiphong">
+              <PropertyRef Name="maphong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="classroommanagementModelStoreContainer">
+          <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cahoc" EntityType="Self.cahoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Giangvien" EntityType="Self.Giangvien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hocphan" EntityType="Self.hocphan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="monhoc" EntityType="Self.monhoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Nganh" EntityType="Self.Nganh" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Nhom" EntityType="Self.Nhom" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="phonghoc" EntityType="Self.phonghoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="quyen" EntityType="Self.quyen" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="quyentruycap" EntityType="Self.quyentruycap" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tuanhoc" EntityType="Self.tuanhoc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="lapphong" EntityType="Self.lapphong" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [lapphong].[mahp] AS [mahp], 
+    [lapphong].[maphong] AS [maphong], 
+    [lapphong].[malop] AS [malop]
+    FROM [dbo].[lapphong] AS [lapphong]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="thoikhoabieu" EntityType="Self.thoikhoabieu" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [thoikhoabieu].[mahp] AS [mahp], 
+    [thoikhoabieu].[malop] AS [malop], 
+    [thoikhoabieu].[magv] AS [magv], 
+    [thoikhoabieu].[manganh] AS [manganh], 
+    [thoikhoabieu].[maca] AS [maca], 
+    [thoikhoabieu].[siso] AS [siso], 
+    [thoikhoabieu].[tuanhocbatdau] AS [tuanhocbatdau], 
+    [thoikhoabieu].[tuanhocketthuc] AS [tuanhocketthuc], 
+    [thoikhoabieu].[ID] AS [ID]
+    FROM [dbo].[thoikhoabieu] AS [thoikhoabieu]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="trangthaiphong" EntityType="Self.trangthaiphong" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [trangthaiphong].[maphong] AS [maphong], 
+    [trangthaiphong].[maca] AS [maca], 
+    [trangthaiphong].[hientrang] AS [hientrang], 
+    [trangthaiphong].[thoigianbatdau] AS [thoigianbatdau], 
+    [trangthaiphong].[thoigianketthuc] AS [thoigianketthuc], 
+    [trangthaiphong].[ID] AS [ID]
+    FROM [dbo].[trangthaiphong] AS [trangthaiphong]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="pk_fraccmanhom" Association="Self.pk_fraccmanhom">
+            <End Role="Nhom" EntitySet="Nhom" />
+            <End Role="Account" EntitySet="Account" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frgvmagv" Association="Self.pk_frgvmagv">
+            <End Role="Account" EntitySet="Account" />
+            <End Role="Giangvien" EntitySet="Giangvien" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frgvmasv" Association="Self.pk_frgvmasv">
+            <End Role="Account" EntitySet="Account" />
+            <End Role="SinhVien" EntitySet="SinhVien" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frgvnganh" Association="Self.pk_frgvnganh">
+            <End Role="Nganh" EntitySet="Nganh" />
+            <End Role="Giangvien" EntitySet="Giangvien" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frhpmamh" Association="Self.pk_frhpmamh">
+            <End Role="monhoc" EntitySet="monhoc" />
+            <End Role="hocphan" EntitySet="hocphan" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frlmang" Association="Self.pk_frlmang">
+            <End Role="Nganh" EntitySet="Nganh" />
+            <End Role="Lop" EntitySet="Lop" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frlpmalop" Association="Self.pk_frlpmalop">
+            <End Role="Lop" EntitySet="Lop" />
+            <End Role="lapphong" EntitySet="lapphong" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frlpmamaphong" Association="Self.pk_frlpmamaphong">
+            <End Role="phonghoc" EntitySet="phonghoc" />
+            <End Role="lapphong" EntitySet="lapphong" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frqtrcmanhom" Association="Self.pk_frqtrcmanhom">
+            <End Role="Nhom" EntitySet="Nhom" />
+            <End Role="quyentruycap" EntitySet="quyentruycap" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frqtrcmaquyen" Association="Self.pk_frqtrcmaquyen">
+            <End Role="quyen" EntitySet="quyen" />
+            <End Role="quyentruycap" EntitySet="quyentruycap" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frsvlop" Association="Self.pk_frsvlop">
+            <End Role="Lop" EntitySet="Lop" />
+            <End Role="SinhVien" EntitySet="SinhVien" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frsvnganh" Association="Self.pk_frsvnganh">
+            <End Role="Nganh" EntitySet="Nganh" />
+            <End Role="SinhVien" EntitySet="SinhVien" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmaca" Association="Self.pk_frtkbmaca">
+            <End Role="cahoc" EntitySet="cahoc" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieu" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmagv" Association="Self.pk_frtkbmagv">
+            <End Role="Giangvien" EntitySet="Giangvien" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieu" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmahp" Association="Self.pk_frtkbmahp">
+            <End Role="hocphan" EntitySet="hocphan" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieu" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmalop" Association="Self.pk_frtkbmalop">
+            <End Role="Lop" EntitySet="Lop" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieu" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmanganh" Association="Self.pk_frtkbmanganh">
+            <End Role="Nganh" EntitySet="Nganh" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieu" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frttpmaca" Association="Self.pk_frttpmaca">
+            <End Role="cahoc" EntitySet="cahoc" />
+            <End Role="trangthaiphong" EntitySet="trangthaiphong" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frttpmaphong" Association="Self.pk_frttpmaphong">
+            <End Role="phonghoc" EntitySet="phonghoc" />
+            <End Role="trangthaiphong" EntitySet="trangthaiphong" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="classroommanagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="maid" />
+          </Key>
+          <Property Name="maid" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pass" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="manhom" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Nhom" Relationship="Self.pk_fraccmanhom" FromRole="Account" ToRole="Nhom" />
+          <NavigationProperty Name="Giangvien" Relationship="Self.pk_frgvmagv" FromRole="Account" ToRole="Giangvien" />
+          <NavigationProperty Name="SinhVien" Relationship="Self.pk_frgvmasv" FromRole="Account" ToRole="SinhVien" />
+        </EntityType>
+        <EntityType Name="cahoc">
+          <Key>
+            <PropertyRef Name="maca" />
+          </Key>
+          <Property Name="maca" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="thoiluong" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="thoigianbatdau" Type="Time" />
+          <Property Name="thoigianketthuc" Type="Time" />
+          <NavigationProperty Name="thoikhoabieux" Relationship="Self.pk_frtkbmaca" FromRole="cahoc" ToRole="thoikhoabieu" />
+          <NavigationProperty Name="trangthaiphongs" Relationship="Self.pk_frttpmaca" FromRole="cahoc" ToRole="trangthaiphong" />
+        </EntityType>
+        <EntityType Name="Giangvien">
+          <Key>
+            <PropertyRef Name="magv" />
+          </Key>
+          <Property Name="magv" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tengv" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="manganh" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Account" Relationship="Self.pk_frgvmagv" FromRole="Giangvien" ToRole="Account" />
+          <NavigationProperty Name="Nganh" Relationship="Self.pk_frgvnganh" FromRole="Giangvien" ToRole="Nganh" />
+          <NavigationProperty Name="thoikhoabieux" Relationship="Self.pk_frtkbmagv" FromRole="Giangvien" ToRole="thoikhoabieu" />
+        </EntityType>
+        <EntityType Name="hocphan">
+          <Key>
+            <PropertyRef Name="mahp" />
+          </Key>
+          <Property Name="mahp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mamh" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="monhoc" Relationship="Self.pk_frhpmamh" FromRole="hocphan" ToRole="monhoc" />
+          <NavigationProperty Name="thoikhoabieux" Relationship="Self.pk_frtkbmahp" FromRole="hocphan" ToRole="thoikhoabieu" />
+        </EntityType>
+        <EntityType Name="Lop">
+          <Key>
+            <PropertyRef Name="malop" />
+          </Key>
+          <Property Name="malop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tenlop" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="manganh" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Nganh" Relationship="Self.pk_frlmang" FromRole="Lop" ToRole="Nganh" />
+          <NavigationProperty Name="lapphongs" Relationship="Self.pk_frlpmalop" FromRole="Lop" ToRole="lapphong" />
+          <NavigationProperty Name="SinhViens" Relationship="Self.pk_frsvlop" FromRole="Lop" ToRole="SinhVien" />
+          <NavigationProperty Name="thoikhoabieux" Relationship="Self.pk_frtkbmalop" FromRole="Lop" ToRole="thoikhoabieu" />
+        </EntityType>
+        <EntityType Name="monhoc">
+          <Key>
+            <PropertyRef Name="mamh" />
+          </Key>
+          <Property Name="mamh" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tenmh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="sotinchi" Type="Int32" />
+          <NavigationProperty Name="hocphans" Relationship="Self.pk_frhpmamh" FromRole="monhoc" ToRole="hocphan" />
+        </EntityType>
+        <EntityType Name="Nganh">
+          <Key>
+            <PropertyRef Name="manganh" />
+          </Key>
+          <Property Name="manganh" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tennganh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Giangviens" Relationship="Self.pk_frgvnganh" FromRole="Nganh" ToRole="Giangvien" />
+          <NavigationProperty Name="Lops" Relationship="Self.pk_frlmang" FromRole="Nganh" ToRole="Lop" />
+          <NavigationProperty Name="SinhViens" Relationship="Self.pk_frsvnganh" FromRole="Nganh" ToRole="SinhVien" />
+          <NavigationProperty Name="thoikhoabieux" Relationship="Self.pk_frtkbmanganh" FromRole="Nganh" ToRole="thoikhoabieu" />
+        </EntityType>
+        <EntityType Name="Nhom">
+          <Key>
+            <PropertyRef Name="manhom" />
+          </Key>
+          <Property Name="manhom" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tennhom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="phanloai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="thongtin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="Accounts" Relationship="Self.pk_fraccmanhom" FromRole="Nhom" ToRole="Account" />
+          <NavigationProperty Name="quyentruycaps" Relationship="Self.pk_frqtrcmanhom" FromRole="Nhom" ToRole="quyentruycap" />
+        </EntityType>
+        <EntityType Name="phonghoc">
+          <Key>
+            <PropertyRef Name="maphong" />
+          </Key>
+          <Property Name="maphong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tenphong" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="dien_tich" Type="Double" />
+          <Property Name="siso" Type="Int32" />
+          <Property Name="images" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="lapphongs" Relationship="Self.pk_frlpmamaphong" FromRole="phonghoc" ToRole="lapphong" />
+          <NavigationProperty Name="trangthaiphongs" Relationship="Self.pk_frttpmaphong" FromRole="phonghoc" ToRole="trangthaiphong" />
+        </EntityType>
+        <EntityType Name="quyen">
+          <Key>
+            <PropertyRef Name="maquyen" />
+          </Key>
+          <Property Name="maquyen" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="quyenloi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="quyentruycaps" Relationship="Self.pk_frqtrcmaquyen" FromRole="quyen" ToRole="quyentruycap" />
+        </EntityType>
+        <EntityType Name="quyentruycap">
+          <Key>
+            <PropertyRef Name="manhom" />
+            <PropertyRef Name="maquyen" />
+          </Key>
+          <Property Name="manhom" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="maquyen" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="trangthai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Nhom" Relationship="Self.pk_frqtrcmanhom" FromRole="quyentruycap" ToRole="Nhom" />
+          <NavigationProperty Name="quyen" Relationship="Self.pk_frqtrcmaquyen" FromRole="quyentruycap" ToRole="quyen" />
+        </EntityType>
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="masv" />
+          </Key>
+          <Property Name="masv" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="hoten" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="malop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="manganh" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="gioitinh" Type="Boolean" />
+          <NavigationProperty Name="Account" Relationship="Self.pk_frgvmasv" FromRole="SinhVien" ToRole="Account" />
+          <NavigationProperty Name="Lop" Relationship="Self.pk_frsvlop" FromRole="SinhVien" ToRole="Lop" />
+          <NavigationProperty Name="Nganh" Relationship="Self.pk_frsvnganh" FromRole="SinhVien" ToRole="Nganh" />
+        </EntityType>
+        <EntityType Name="tuanhoc">
+          <Key>
+            <PropertyRef Name="tuan" />
+          </Key>
+          <Property Name="tuan" Type="Int32" Nullable="false" />
+          <Property Name="thoigianbatdau" Type="DateTime" />
+          <Property Name="thoigianketthuc" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="lapphong">
+          <Key>
+            <PropertyRef Name="mahp" />
+            <PropertyRef Name="maphong" />
+            <PropertyRef Name="malop" />
+          </Key>
+          <Property Name="mahp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="maphong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="malop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Lop" Relationship="Self.pk_frlpmalop" FromRole="lapphong" ToRole="Lop" />
+          <NavigationProperty Name="phonghoc" Relationship="Self.pk_frlpmamaphong" FromRole="lapphong" ToRole="phonghoc" />
+        </EntityType>
+        <EntityType Name="thoikhoabieu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="mahp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="malop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="magv" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="manganh" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="maca" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="siso" Type="Int32" />
+          <Property Name="tuanhocbatdau" Type="Int32" />
+          <Property Name="tuanhocketthuc" Type="Int32" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="cahoc" Relationship="Self.pk_frtkbmaca" FromRole="thoikhoabieu" ToRole="cahoc" />
+          <NavigationProperty Name="Giangvien" Relationship="Self.pk_frtkbmagv" FromRole="thoikhoabieu" ToRole="Giangvien" />
+          <NavigationProperty Name="hocphan" Relationship="Self.pk_frtkbmahp" FromRole="thoikhoabieu" ToRole="hocphan" />
+          <NavigationProperty Name="Lop" Relationship="Self.pk_frtkbmalop" FromRole="thoikhoabieu" ToRole="Lop" />
+          <NavigationProperty Name="Nganh" Relationship="Self.pk_frtkbmanganh" FromRole="thoikhoabieu" ToRole="Nganh" />
+        </EntityType>
+        <EntityType Name="trangthaiphong">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="maphong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="maca" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="hientrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="thoigianbatdau" Type="DateTime" />
+          <Property Name="thoigianketthuc" Type="DateTime" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="cahoc" Relationship="Self.pk_frttpmaca" FromRole="trangthaiphong" ToRole="cahoc" />
+          <NavigationProperty Name="phonghoc" Relationship="Self.pk_frttpmaphong" FromRole="trangthaiphong" ToRole="phonghoc" />
+        </EntityType>
+        <Association Name="pk_fraccmanhom">
+          <End Role="Nhom" Type="Self.Nhom" Multiplicity="0..1" />
+          <End Role="Account" Type="Self.Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhom">
+              <PropertyRef Name="manhom" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="manhom" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frgvmagv">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="Giangvien" Type="Self.Giangvien" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="maid" />
+            </Principal>
+            <Dependent Role="Giangvien">
+              <PropertyRef Name="magv" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frgvmasv">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="maid" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="masv" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmaca">
+          <End Role="cahoc" Type="Self.cahoc" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cahoc">
+              <PropertyRef Name="maca" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="maca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frttpmaca">
+          <End Role="cahoc" Type="Self.cahoc" Multiplicity="0..1" />
+          <End Role="trangthaiphong" Type="Self.trangthaiphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cahoc">
+              <PropertyRef Name="maca" />
+            </Principal>
+            <Dependent Role="trangthaiphong">
+              <PropertyRef Name="maca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frgvnganh">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="Giangvien" Type="Self.Giangvien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="Giangvien">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmagv">
+          <End Role="Giangvien" Type="Self.Giangvien" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Giangvien">
+              <PropertyRef Name="magv" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="magv" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frhpmamh">
+          <End Role="monhoc" Type="Self.monhoc" Multiplicity="0..1" />
+          <End Role="hocphan" Type="Self.hocphan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="monhoc">
+              <PropertyRef Name="mamh" />
+            </Principal>
+            <Dependent Role="hocphan">
+              <PropertyRef Name="mamh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmahp">
+          <End Role="hocphan" Type="Self.hocphan" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="hocphan">
+              <PropertyRef Name="mahp" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="mahp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frlmang">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="Lop" Type="Self.Lop" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="Lop">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frlpmalop">
+          <End Role="Lop" Type="Self.Lop" Multiplicity="1" />
+          <End Role="lapphong" Type="Self.lapphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="malop" />
+            </Principal>
+            <Dependent Role="lapphong">
+              <PropertyRef Name="malop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frsvlop">
+          <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="malop" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="malop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmalop">
+          <End Role="Lop" Type="Self.Lop" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lop">
+              <PropertyRef Name="malop" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="malop" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frsvnganh">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="SinhVien" Type="Self.SinhVien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="SinhVien">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frtkbmanganh">
+          <End Role="Nganh" Type="Self.Nganh" Multiplicity="0..1" />
+          <End Role="thoikhoabieu" Type="Self.thoikhoabieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nganh">
+              <PropertyRef Name="manganh" />
+            </Principal>
+            <Dependent Role="thoikhoabieu">
+              <PropertyRef Name="manganh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frqtrcmanhom">
+          <End Role="Nhom" Type="Self.Nhom" Multiplicity="1" />
+          <End Role="quyentruycap" Type="Self.quyentruycap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nhom">
+              <PropertyRef Name="manhom" />
+            </Principal>
+            <Dependent Role="quyentruycap">
+              <PropertyRef Name="maquyen" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frlpmamaphong">
+          <End Role="phonghoc" Type="Self.phonghoc" Multiplicity="1" />
+          <End Role="lapphong" Type="Self.lapphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="phonghoc">
+              <PropertyRef Name="maphong" />
+            </Principal>
+            <Dependent Role="lapphong">
+              <PropertyRef Name="maphong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frttpmaphong">
+          <End Role="phonghoc" Type="Self.phonghoc" Multiplicity="0..1" />
+          <End Role="trangthaiphong" Type="Self.trangthaiphong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="phonghoc">
+              <PropertyRef Name="maphong" />
+            </Principal>
+            <Dependent Role="trangthaiphong">
+              <PropertyRef Name="maphong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="pk_frqtrcmaquyen">
+          <End Role="quyen" Type="Self.quyen" Multiplicity="1" />
+          <End Role="quyentruycap" Type="Self.quyentruycap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="quyen">
+              <PropertyRef Name="maquyen" />
+            </Principal>
+            <Dependent Role="quyentruycap">
+              <PropertyRef Name="maquyen" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="classroommanagementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Accounts" EntityType="Self.Account" />
+          <EntitySet Name="cahocs" EntityType="Self.cahoc" />
+          <EntitySet Name="Giangviens" EntityType="Self.Giangvien" />
+          <EntitySet Name="hocphans" EntityType="Self.hocphan" />
+          <EntitySet Name="Lops" EntityType="Self.Lop" />
+          <EntitySet Name="monhocs" EntityType="Self.monhoc" />
+          <EntitySet Name="Nganhs" EntityType="Self.Nganh" />
+          <EntitySet Name="Nhoms" EntityType="Self.Nhom" />
+          <EntitySet Name="phonghocs" EntityType="Self.phonghoc" />
+          <EntitySet Name="quyens" EntityType="Self.quyen" />
+          <EntitySet Name="quyentruycaps" EntityType="Self.quyentruycap" />
+          <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+          <EntitySet Name="tuanhocs" EntityType="Self.tuanhoc" />
+          <EntitySet Name="lapphongs" EntityType="Self.lapphong" />
+          <EntitySet Name="thoikhoabieux" EntityType="Self.thoikhoabieu" />
+          <EntitySet Name="trangthaiphongs" EntityType="Self.trangthaiphong" />
+          <AssociationSet Name="pk_fraccmanhom" Association="Self.pk_fraccmanhom">
+            <End Role="Nhom" EntitySet="Nhoms" />
+            <End Role="Account" EntitySet="Accounts" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frgvmagv" Association="Self.pk_frgvmagv">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="Giangvien" EntitySet="Giangviens" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frgvmasv" Association="Self.pk_frgvmasv">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="SinhVien" EntitySet="SinhViens" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmaca" Association="Self.pk_frtkbmaca">
+            <End Role="cahoc" EntitySet="cahocs" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieux" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frttpmaca" Association="Self.pk_frttpmaca">
+            <End Role="cahoc" EntitySet="cahocs" />
+            <End Role="trangthaiphong" EntitySet="trangthaiphongs" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frgvnganh" Association="Self.pk_frgvnganh">
+            <End Role="Nganh" EntitySet="Nganhs" />
+            <End Role="Giangvien" EntitySet="Giangviens" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmagv" Association="Self.pk_frtkbmagv">
+            <End Role="Giangvien" EntitySet="Giangviens" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieux" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frhpmamh" Association="Self.pk_frhpmamh">
+            <End Role="monhoc" EntitySet="monhocs" />
+            <End Role="hocphan" EntitySet="hocphans" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmahp" Association="Self.pk_frtkbmahp">
+            <End Role="hocphan" EntitySet="hocphans" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieux" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frlmang" Association="Self.pk_frlmang">
+            <End Role="Nganh" EntitySet="Nganhs" />
+            <End Role="Lop" EntitySet="Lops" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frlpmalop" Association="Self.pk_frlpmalop">
+            <End Role="Lop" EntitySet="Lops" />
+            <End Role="lapphong" EntitySet="lapphongs" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frsvlop" Association="Self.pk_frsvlop">
+            <End Role="Lop" EntitySet="Lops" />
+            <End Role="SinhVien" EntitySet="SinhViens" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmalop" Association="Self.pk_frtkbmalop">
+            <End Role="Lop" EntitySet="Lops" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieux" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frsvnganh" Association="Self.pk_frsvnganh">
+            <End Role="Nganh" EntitySet="Nganhs" />
+            <End Role="SinhVien" EntitySet="SinhViens" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frtkbmanganh" Association="Self.pk_frtkbmanganh">
+            <End Role="Nganh" EntitySet="Nganhs" />
+            <End Role="thoikhoabieu" EntitySet="thoikhoabieux" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frqtrcmanhom" Association="Self.pk_frqtrcmanhom">
+            <End Role="Nhom" EntitySet="Nhoms" />
+            <End Role="quyentruycap" EntitySet="quyentruycaps" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frlpmamaphong" Association="Self.pk_frlpmamaphong">
+            <End Role="phonghoc" EntitySet="phonghocs" />
+            <End Role="lapphong" EntitySet="lapphongs" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frttpmaphong" Association="Self.pk_frttpmaphong">
+            <End Role="phonghoc" EntitySet="phonghocs" />
+            <End Role="trangthaiphong" EntitySet="trangthaiphongs" />
+          </AssociationSet>
+          <AssociationSet Name="pk_frqtrcmaquyen" Association="Self.pk_frqtrcmaquyen">
+            <End Role="quyen" EntitySet="quyens" />
+            <End Role="quyentruycap" EntitySet="quyentruycaps" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="classroommanagementModelStoreContainer" CdmEntityContainer="classroommanagementEntities">
+          <EntitySetMapping Name="Accounts">
+            <EntityTypeMapping TypeName="classroommanagementModel.Account">
+              <MappingFragment StoreEntitySet="Account">
+                <ScalarProperty Name="maid" ColumnName="maid" />
+                <ScalarProperty Name="pass" ColumnName="pass" />
+                <ScalarProperty Name="manhom" ColumnName="manhom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cahocs">
+            <EntityTypeMapping TypeName="classroommanagementModel.cahoc">
+              <MappingFragment StoreEntitySet="cahoc">
+                <ScalarProperty Name="maca" ColumnName="maca" />
+                <ScalarProperty Name="thoiluong" ColumnName="thoiluong" />
+                <ScalarProperty Name="thoigianbatdau" ColumnName="thoigianbatdau" />
+                <ScalarProperty Name="thoigianketthuc" ColumnName="thoigianketthuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Giangviens">
+            <EntityTypeMapping TypeName="classroommanagementModel.Giangvien">
+              <MappingFragment StoreEntitySet="Giangvien">
+                <ScalarProperty Name="magv" ColumnName="magv" />
+                <ScalarProperty Name="tengv" ColumnName="tengv" />
+                <ScalarProperty Name="manganh" ColumnName="manganh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hocphans">
+            <EntityTypeMapping TypeName="classroommanagementModel.hocphan">
+              <MappingFragment StoreEntitySet="hocphan">
+                <ScalarProperty Name="mahp" ColumnName="mahp" />
+                <ScalarProperty Name="mamh" ColumnName="mamh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lops">
+            <EntityTypeMapping TypeName="classroommanagementModel.Lop">
+              <MappingFragment StoreEntitySet="Lop">
+                <ScalarProperty Name="malop" ColumnName="malop" />
+                <ScalarProperty Name="tenlop" ColumnName="tenlop" />
+                <ScalarProperty Name="manganh" ColumnName="manganh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="monhocs">
+            <EntityTypeMapping TypeName="classroommanagementModel.monhoc">
+              <MappingFragment StoreEntitySet="monhoc">
+                <ScalarProperty Name="mamh" ColumnName="mamh" />
+                <ScalarProperty Name="tenmh" ColumnName="tenmh" />
+                <ScalarProperty Name="sotinchi" ColumnName="sotinchi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Nganhs">
+            <EntityTypeMapping TypeName="classroommanagementModel.Nganh">
+              <MappingFragment StoreEntitySet="Nganh">
+                <ScalarProperty Name="manganh" ColumnName="manganh" />
+                <ScalarProperty Name="tennganh" ColumnName="tennganh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Nhoms">
+            <EntityTypeMapping TypeName="classroommanagementModel.Nhom">
+              <MappingFragment StoreEntitySet="Nhom">
+                <ScalarProperty Name="manhom" ColumnName="manhom" />
+                <ScalarProperty Name="tennhom" ColumnName="tennhom" />
+                <ScalarProperty Name="phanloai" ColumnName="phanloai" />
+                <ScalarProperty Name="thongtin" ColumnName="thongtin" />
+                <ScalarProperty Name="image" ColumnName="image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="phonghocs">
+            <EntityTypeMapping TypeName="classroommanagementModel.phonghoc">
+              <MappingFragment StoreEntitySet="phonghoc">
+                <ScalarProperty Name="maphong" ColumnName="maphong" />
+                <ScalarProperty Name="tenphong" ColumnName="tenphong" />
+                <ScalarProperty Name="dien_tich" ColumnName="dien_tich" />
+                <ScalarProperty Name="siso" ColumnName="siso" />
+                <ScalarProperty Name="images" ColumnName="images" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="quyens">
+            <EntityTypeMapping TypeName="classroommanagementModel.quyen">
+              <MappingFragment StoreEntitySet="quyen">
+                <ScalarProperty Name="maquyen" ColumnName="maquyen" />
+                <ScalarProperty Name="quyenloi" ColumnName="quyenloi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="quyentruycaps">
+            <EntityTypeMapping TypeName="classroommanagementModel.quyentruycap">
+              <MappingFragment StoreEntitySet="quyentruycap">
+                <ScalarProperty Name="manhom" ColumnName="manhom" />
+                <ScalarProperty Name="maquyen" ColumnName="maquyen" />
+                <ScalarProperty Name="trangthai" ColumnName="trangthai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SinhViens">
+            <EntityTypeMapping TypeName="classroommanagementModel.SinhVien">
+              <MappingFragment StoreEntitySet="SinhVien">
+                <ScalarProperty Name="masv" ColumnName="masv" />
+                <ScalarProperty Name="hoten" ColumnName="hoten" />
+                <ScalarProperty Name="malop" ColumnName="malop" />
+                <ScalarProperty Name="manganh" ColumnName="manganh" />
+                <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tuanhocs">
+            <EntityTypeMapping TypeName="classroommanagementModel.tuanhoc">
+              <MappingFragment StoreEntitySet="tuanhoc">
+                <ScalarProperty Name="tuan" ColumnName="tuan" />
+                <ScalarProperty Name="thoigianbatdau" ColumnName="thoigianbatdau" />
+                <ScalarProperty Name="thoigianketthuc" ColumnName="thoigianketthuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="lapphongs">
+            <EntityTypeMapping TypeName="classroommanagementModel.lapphong">
+              <MappingFragment StoreEntitySet="lapphong">
+                <ScalarProperty Name="mahp" ColumnName="mahp" />
+                <ScalarProperty Name="maphong" ColumnName="maphong" />
+                <ScalarProperty Name="malop" ColumnName="malop" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="thoikhoabieux">
+            <EntityTypeMapping TypeName="classroommanagementModel.thoikhoabieu">
+              <MappingFragment StoreEntitySet="thoikhoabieu">
+                <ScalarProperty Name="mahp" ColumnName="mahp" />
+                <ScalarProperty Name="malop" ColumnName="malop" />
+                <ScalarProperty Name="magv" ColumnName="magv" />
+                <ScalarProperty Name="manganh" ColumnName="manganh" />
+                <ScalarProperty Name="maca" ColumnName="maca" />
+                <ScalarProperty Name="siso" ColumnName="siso" />
+                <ScalarProperty Name="tuanhocbatdau" ColumnName="tuanhocbatdau" />
+                <ScalarProperty Name="tuanhocketthuc" ColumnName="tuanhocketthuc" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="trangthaiphongs">
+            <EntityTypeMapping TypeName="classroommanagementModel.trangthaiphong">
+              <MappingFragment StoreEntitySet="trangthaiphong">
+                <ScalarProperty Name="maphong" ColumnName="maphong" />
+                <ScalarProperty Name="maca" ColumnName="maca" />
+                <ScalarProperty Name="hientrang" ColumnName="hientrang" />
+                <ScalarProperty Name="thoigianbatdau" ColumnName="thoigianbatdau" />
+                <ScalarProperty Name="thoigianketthuc" ColumnName="thoigianketthuc" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
